@@ -1,0 +1,78 @@
+
+body {
+	.image-block;
+	background-image: url('bg.jpg');
+	background-attachment: fixed;
+
+	@media (min-width: 1600px) and (min-height: 900px) {
+		font-size: 18px;
+	}
+
+	@media (min-width: 1920px) and (min-height: 1080px) {
+		font-size: 20px;
+	}
+}
+
+.top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	height: 60px;
+	line-height: 60px;
+	// background: brown;
+	color: @color-white;
+
+	.logo-text {
+		display: inline-block;
+		float: left;
+		margin: 0;
+		font-weight: normal;
+		font-size: 2.2em;
+
+		span {
+			margin: 3px;
+			font-size: 0.675em;
+		}
+	}
+
+	.nav {
+		float: right;
+		text-align: right;
+		font-size: 1.2em;
+
+		li {
+			display: inline-block;
+			padding: 0 1em;
+
+			&:hover {
+				color: fade(@color-white, 80%);
+			}
+		}
+	}
+}
+
+.banner {
+	background-color: fade(@color-black, 40%);
+}
+
+.slogan {
+	float: left;
+	width: 100%;
+	margin-top: 20%;
+	color: @color-white;
+	line-height: 1.27;
+	text-align: center;
+	font-size: 4em;
+
+	.slogan-title {
+		font-size: 0.625em;
+	}
+}
+
+.container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}

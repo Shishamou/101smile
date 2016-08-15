@@ -1,0 +1,197 @@
+.pseudo {
+  content: '';
+  display: block;
+}
+.pseudo-block {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.image-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body,
+html,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: 'sans-serif', 'Noto Sans CJK TC', 'WenQuanYi Zen Hei', 'Heiti TC', 'Microsoft JhengHei';
+  font-size: 16px;
+}
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('bg.jpg');
+  background-attachment: fixed;
+}
+@media (min-width: 1600px) and (min-height: 900px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) and (min-height: 1080px) {
+  body {
+    font-size: 20px;
+  }
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 60px;
+  line-height: 60px;
+  color: #fefefe;
+}
+.top .logo-text {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+.top .logo-text span {
+  margin: 3px;
+  font-size: 0.675em;
+}
+.top .nav {
+  float: right;
+  text-align: right;
+  font-size: 1.2em;
+}
+.top .nav li {
+  display: inline-block;
+  padding: 0 1em;
+}
+.top .nav li:hover {
+  color: rgba(254, 254, 254, 0.8);
+}
+.banner {
+  background-color: rgba(3, 3, 3, 0.4);
+}
+.slogan {
+  float: left;
+  width: 100%;
+  margin-top: 20%;
+  color: #fefefe;
+  line-height: 1.27;
+  text-align: center;
+  font-size: 4em;
+}
+.slogan .slogan-title {
+  font-size: 0.625em;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  position: relative;
+  overflow: auto;
+  min-height: 60vh;
+}
+.section .container {
+  position: relative;
+  overflow: auto;
+  padding: 2em 0;
+}
+.section.sections-full {
+  width: 100%;
+  min-height: 100vh;
+}
+.section.sections-light {
+  background: #fefefe;
+}
+.section.sections-gray {
+  background: #f3f3f3;
+}
+.section .section-header {
+  margin: 1.2em 0 1em;
+  color: brown;
+  font-size: 2.2em;
+}
+.section .section-content h1,
+.section .section-content h2,
+.section .section-content h3 {
+  color: #d65f5f;
+  font-size: 1.2em;
+}
+.section .section-content p {
+  margin: 0.7em 0 3em;
+}
+.section2 .section2-figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 36%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('bg2.jpg');
+}
+.section2 .section2-main {
+  float: right;
+  width: 60%;
+}
+.nav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.half {
+  font-size: 0;
+}
+.half::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.half .content {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: middle;
+}

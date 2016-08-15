@@ -1,0 +1,61 @@
+
+.section {
+	position: relative;
+	overflow: auto;
+	min-height: 60vh;
+
+	.container {
+		position: relative;
+		overflow: auto;
+		padding: 2em 0;
+	}
+
+	&.sections-full {
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	&.sections-light {
+		background: @color-white;
+	}
+
+	&.sections-gray {
+		background: @color-gray;
+	}
+
+	.section-header {
+		margin: 1.2em 0 1em;
+		color: @color-style;
+		font-size: 2.2em;
+	}
+
+	.section-content {
+		h1, h2, h3 {
+			color: lighten(@color-style, 20%);
+			font-size: 1.2em;
+		}
+
+		p {
+			margin: 0.7em 0 3em;
+		}
+	}
+}
+
+
+.section2 {
+	.section2-figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 36%;
+
+		.image-block;
+		background-image: url('bg2.jpg');
+	}
+
+	.section2-main {
+		float: right;
+		width: 60%;
+	}
+}

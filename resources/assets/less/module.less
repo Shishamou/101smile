@@ -1,0 +1,27 @@
+
+.nav {
+	li {
+		a {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}
+
+.half {
+	font-size: 0;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.content {
+		display: inline-block;
+		font-size: 1rem;
+		vertical-align: middle;
+	}
+}

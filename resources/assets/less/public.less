@@ -1,0 +1,27 @@
+
+@color-white: #fefefe;
+@color-gray: #f3f3f3;
+@color-black: #030303;
+
+@color-style: brown;
+@color-normal: lighten(@color-black, 40%);
+
+.pseudo {
+	content: '';
+	display: block;
+}
+
+.pseudo-block {
+	.pseudo;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.image-block {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
