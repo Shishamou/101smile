@@ -42,8 +42,8 @@
 }
 
 
-.section2 {
-	.section2-figure {
+.section1 {
+	.section1-figure {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -54,8 +54,36 @@
 		background-image: url('bg2.jpg');
 	}
 
-	.section2-main {
+	.section1-main {
 		float: right;
 		width: 60%;
+	}
+}
+
+.section2 {
+	padding-bottom: 4em;
+	text-align: center;
+
+	.figure-group {
+		@column-count: 3;
+		@column-space: 2%;
+
+		li {
+			float: left;
+			width: calc(~"100% / @{column-count} - @{column-space} * 2");
+			margin: 0 @column-space;
+		}
+
+		.item-figure {
+			.figure(60%, 60%);
+			overflow: hidden;
+			border-radius: 50%;
+			margin: 1em auto 2em;
+		}
+
+		.item-header {
+			font-size: 1.4em;
+			margin: 0 0 0.5em;
+		}
 	}
 }
