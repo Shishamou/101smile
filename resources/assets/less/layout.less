@@ -1,8 +1,5 @@
 
 body {
-	.image-block;
-	background-image: url('bg.jpg');
-	background-attachment: fixed;
 	color: @color-normal;
 	font-size: 14px;
 
@@ -39,7 +36,6 @@ h3 {
 	z-index: 1000;
 	height: 60px;
 	line-height: 60px;
-	// background: brown;
 	color: @color-white;
 
 	.logo-text {
@@ -72,6 +68,14 @@ h3 {
 }
 
 .banner {
+	&::before {
+		.pseudo-block;
+		.image-block;
+		z-index: -1;
+		background-image: url('bg.jpg');
+		background-attachment: fixed;
+	}
+
 	background-color: fade(@color-black, 40%);
 }
 
