@@ -26,4 +26,5 @@ $(document).ready(function() {
         $(this).parent().addClass('actived');
       }).first().click();
   });
+
 });
