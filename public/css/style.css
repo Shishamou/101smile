@@ -220,6 +220,11 @@ h3 {
   color: #d65f5f;
   font-size: 1.4em;
 }
+.section2 a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 .section3 iframe {
   width: 100%;
   height: 68vh;
@@ -255,19 +260,6 @@ h3 {
 .section3 .tabs li.actived span {
   border-bottom: 0.2em solid brown;
 }
-.service {
-  float: left;
-  padding-right: 1em;
-}
-.service h1,
-.service h2,
-.service h3 {
-  color: #d65f5f;
-  margin: 0.5em 0;
-}
-.service p {
-  margin: 1em 0;
-}
 .section4 {
   height: 50vh;
 }
@@ -301,4 +293,54 @@ h3 {
   display: inline-block;
   font-size: 1rem;
   vertical-align: middle;
+}
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+}
+.box .box-content {
+  box-sizing: border-box;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  background: #fefefe;
+  border: 4px solid #d65f5f;
+  border-radius: 8px;
+}
+.box .box-content .box-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.2em;
+  color: #d65f5f;
+}
+.box .box-content .box-control:hover {
+  color: brown;
+  cursor: pointer;
+}
+.box .box-content iframe {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 2em 1em 1em;
+  border: none;
+}
+.article {
+  float: left;
+  padding-right: 1em;
+}
+.article h1,
+.article h2,
+.article h3 {
+  color: #d65f5f;
+  margin: 0.5em 0;
+}
+.article p {
+  margin: 1em 0;
 }

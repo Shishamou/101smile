@@ -11038,6 +11038,24 @@ $(document).ready(function () {
       $(this).parent().addClass('actived');
     }).first().click();
   });
+
+  $('.box').map(function (e) {
+    var $iframe = $(this).find('iframe');
+    var close = function close(e) {
+      $(this).hide();
+    };
+    $(this).click(close);
+    $(this).find('.box-control').click(close);
+    $(this).find('.box-content').click(function (e) {
+      e.preventDefault();
+    });
+
+    $('#team a').click(function (e) {
+      e.preventDefault();
+      $iframe.attr('src', $(this).attr('href'));
+      $('.box').show();
+    });
+  });
 });
 
 },{"jquery":1}]},{},[2]);
