@@ -29,8 +29,9 @@ $(document).ready(function() {
 
   $('.box').map(function(e) {
     var $iframe = $(this).find('iframe');
+    var $this = $(this);
     var close = function(e) {
-      $(this).hide();
+      $this.hide();
     }
     $(this).click(close);
     $(this).find('.box-control').click(close);
@@ -41,7 +42,7 @@ $(document).ready(function() {
     $('#team a').click(function(e) {
       e.preventDefault();
       $iframe.attr('src', $(this).attr('href'));
-      $('.box').show();
+      $this.show();
     })
   });
 });
