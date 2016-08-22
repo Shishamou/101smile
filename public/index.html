@@ -19,7 +19,8 @@
 							<li><a href="#about">關於仁愛傑仕</a></li>
 							<li><a href="#team">醫療團隊</a></li>
 							<li><a href="#service">診療項目</a></li>
-							<li><a href="#location">聯絡我們</a></li>
+							<li><a href="#location">地理位置</a></li>
+							<li><a href="https://zh-tw.facebook.com/101smiledentalclinic/" target="_blank">聯絡我們</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -145,16 +146,18 @@
 			<script>
 				function initMap() {
 					var map = new google.maps.Map(document.getElementById('map'), {
-		  				center: {lat: 25.035797, lng: 121.557679},
+		  				center: {lat: 25.037547, lng: 121.557679},
 		  				scrollwheel: false,
-		  				zoom: 17,
+		  				zoom: 16,
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 		  			});
 
 					var infowindow = new google.maps.InfoWindow({
 						content: '【門診時間】週一~週六9:30 - 21:30<br>' +
 							'【預約電話】02-2720-2729<br>' +
-							'【診所地址】台北市信義區光復南路441號1樓'
+							'【診所地址】台北市信義區光復南路441號1樓<br><br>' +
+							'捷運國父紀念館站3號出口，走路約9分鐘。<br>' +
+							'捷運信義安和站5號出口，走路約6分鐘'
 					});
 
 					var marker = new google.maps.Marker({

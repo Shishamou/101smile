@@ -186,7 +186,9 @@ h3 {
 }
 .section2 {
   padding-bottom: 4em;
-  text-align: center;
+}
+.section2 .figure-group {
+  line-height: 1.5;
 }
 .section2 .figure-group li {
   float: left;
@@ -218,6 +220,7 @@ h3 {
 .section2 .figure-group .item-header {
   margin: 0 0 0.5em;
   color: #d65f5f;
+  text-align: center;
   font-size: 1.4em;
 }
 .section2 a {
@@ -261,7 +264,7 @@ h3 {
   border-bottom: 0.2em solid brown;
 }
 .section4 {
-  height: 50vh;
+  height: 65vh;
 }
 .section4 #map {
   width: 100%;
