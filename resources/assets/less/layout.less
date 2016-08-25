@@ -29,13 +29,15 @@ h3 {
 }
 
 .top {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 1000;
 	height: 60px;
 	line-height: 60px;
+	background: @color-style;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 1);
 	color: @color-white;
 
 	.logo-text {
@@ -59,9 +61,10 @@ h3 {
 		li {
 			display: inline-block;
 			padding: 0 1em;
+			cursor: pointer;
 
 			&:hover {
-				color: fade(@color-white, 80%);
+				background: @color-style2;
 			}
 		}
 	}

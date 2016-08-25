@@ -67,13 +67,15 @@ h3 {
   font-size: 1.4em;
 }
 .top {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   height: 60px;
   line-height: 60px;
+  background: #40262a;
+  box-shadow: 0 0 8px #000000;
   color: #fefefe;
 }
 .top .logo-text {
@@ -95,9 +97,10 @@ h3 {
 .top .nav li {
   display: inline-block;
   padding: 0 1em;
+  cursor: pointer;
 }
 .top .nav li:hover {
-  color: rgba(254, 254, 254, 0.8);
+  background: #804c54;
 }
 .banner {
   background-color: rgba(3, 3, 3, 0.4);
@@ -156,13 +159,13 @@ h3 {
 }
 .section .section-header {
   margin: 1em 0 0.8em;
-  color: brown;
+  color: #40262a;
   font-size: 2.2em;
 }
 .section .section-content h1,
 .section .section-content h2,
 .section .section-content h3 {
-  color: #d65f5f;
+  color: #804c54;
   font-size: 1.2em;
 }
 .section .section-content p {
@@ -218,7 +221,7 @@ h3 {
 }
 .section2 .figure-group .item-header {
   margin: 0 0 0.5em;
-  color: #d65f5f;
+  color: #804c54;
   text-align: center;
   font-size: 1.4em;
 }
@@ -250,17 +253,17 @@ h3 {
 .section3 .tabs li {
   display: table-cell;
   width: 100%;
-  color: brown;
+  color: #40262a;
   font-size: 1.2em;
 }
 .section3 .tabs li:hover {
-  color: #d65f5f;
+  color: #804c54;
 }
 .section3 .tabs li span {
   padding: 0.2em;
 }
 .section3 .tabs li.actived span {
-  border-bottom: 0.2em solid brown;
+  border-bottom: 0.2em solid #40262a;
 }
 .section4 .container {
   padding-bottom: 0;
@@ -273,7 +276,7 @@ h3 {
   width: 100%;
   height: 2.5em;
   line-height: 2.5em;
-  background: #2b0b0b;
+  background: #000000;
   color: #fefefe;
   text-align: center;
 }
@@ -312,7 +315,7 @@ h3 {
   height: 80%;
   margin: 5% auto;
   background: #fefefe;
-  border: 4px solid #d65f5f;
+  border: 4px solid #804c54;
   border-radius: 8px;
 }
 .box .box-content .box-control {
@@ -320,10 +323,10 @@ h3 {
   top: 0;
   right: 0;
   margin: 0.2em;
-  color: #d65f5f;
+  color: #804c54;
 }
 .box .box-content .box-control:hover {
-  color: brown;
+  color: #40262a;
   cursor: pointer;
 }
 .box .box-content iframe {
@@ -340,7 +343,7 @@ h3 {
 .article h1,
 .article h2,
 .article h3 {
-  color: #d65f5f;
+  color: #804c54;
   margin: 0.5em 0;
 }
 .article p {
