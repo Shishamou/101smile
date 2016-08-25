@@ -144,6 +144,17 @@
 		</section>
 
 		<section class="section section-gray section4" id="location">
+			<div class="container">
+				<h1 class="section-header">地理位置</h1>
+				<p class="hide" id="location-content">
+					【門診時間】週一~週六9:30 - 21:30<br>
+					【預約電話】02-2720-2729<br>
+					【診所地址】台北市信義區光復南路441號1樓<br>
+					<br>
+					捷運國父紀念館站3號出口，走路約9分鐘。<br>
+					捷運信義安和站5號出口，走路約6分鐘'
+				</p>
+			</div>
 			<div id="map"></div>
 			<script>
 				function initMap() {
@@ -155,11 +166,7 @@
 		  			});
 
 					var infowindow = new google.maps.InfoWindow({
-						content: '【門診時間】週一~週六9:30 - 21:30<br>' +
-							'【預約電話】02-2720-2729<br>' +
-							'【診所地址】台北市信義區光復南路441號1樓<br><br>' +
-							'捷運國父紀念館站3號出口，走路約9分鐘。<br>' +
-							'捷運信義安和站5號出口，走路約6分鐘'
+						content: document.querySelector('#location-content').innerHTML
 					});
 
 					var marker = new google.maps.Marker({
